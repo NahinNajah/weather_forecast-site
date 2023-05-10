@@ -1,0 +1,153 @@
+*{
+   
+    font-family:sans-serif ;
+}
+
+.bg{
+    background-image: url("Image/bg.img.jpg");
+    background-size: cover;
+
+}
+
+.bg::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(156, 154, 154, 0.94);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
+.search-form{
+    margin-top: 1%;
+    margin-left: 6%;
+}
+.search{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    height: 3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) ;
+}
+
+.search-form #search-box{
+    border: none;
+    
+}
+
+.search-form input{
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0 1.5rem;
+    border-radius: 1rem;
+}
+
+::-webkit-input-placeholder{
+    font-size: 1rem;
+    color: rgb(216, 216, 216); 
+}
+
+.search-form label{
+  font-size: 1.2rem;
+  padding-right: 1.5rem;
+  color: black;
+  cursor: pointer;
+}
+
+.search-form label:hover{
+    color: beige;
+}
+
+.cont{
+    color: white;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    z-index: 1200;
+    text-align: right;
+    
+}
+
+.detail{
+    color: white;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+.weather{
+    width: 1190px;
+    height: 550px;
+    text-align: center;
+    background: transparent;
+    opacity: 0.8;
+    margin-left: 5%;
+    margin-top: 2%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.45);
+    position: absolute;
+    z-index: 1000;
+}
+
+.current{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.current .content-1{
+
+    display: flex;
+}
+.current .content-1 img{
+    width: 130px;
+    height: 170px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.current .content-1 h1{
+    font-size: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.current .content-1 h1 span{
+    font-size: 2rem;
+}
+
+.cont span{
+    font-size: 1rem;
+    color: rgb(206, 206, 206);
+}
+
+.weather-forcast{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    justify-content: space-around;
+    margin-top: 30%;
+}
+
+.weather-forcast .content{
+    background: rgba(255, 255, 255, 0.3);
+    width: 150px;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) ;
+}
